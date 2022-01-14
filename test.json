@@ -1,0 +1,79 @@
+{
+    "sha": "f02753fabb8116ab202fd56b3fcaf9389b7cade6",
+    "node_id": "MDY6Q29tbWl0NjU2MDA5NzU6ZjAyNzUzZmFiYjgxMTZhYjIwMmZkNTZiM2ZjYWY5Mzg5YjdjYWRlNg==",
+    "commit": {
+        "author": {
+            "name": "Hongfei XU",
+            "email": "anoidgit@users.noreply.github.com",
+            "date": "2020-08-25T15:36:57Z"
+        },
+        "committer": {
+            "name": "Facebook GitHub Bot",
+            "email": "facebook-github-bot@users.noreply.github.com",
+            "date": "2020-08-25T15:38:49Z"
+        },
+        "message": "Support AMP in nn.parallel (#43102)\n\nSummary:\nTake care of the state of autocast in `parallel_apply`, so there is no need to decorate model implementations.\n\nPull Request resolved: https://github.com/pytorch/pytorch/pull/43102\n\nReviewed By: ngimel\n\nDifferential Revision: D23294610\n\nPulled By: mrshenli\n\nfbshipit-source-id: 0fbe0c79de976c88cadf2ceb3f2de99d9342d762",
+        "tree": {
+            "sha": "4918bf67c4f5bc2216897c34cde477a34ed28a50",
+            "url": "https://api.github.com/repos/pytorch/pytorch/git/trees/4918bf67c4f5bc2216897c34cde477a34ed28a50"
+        },
+        "url": "https://api.github.com/repos/pytorch/pytorch/git/commits/f02753fabb8116ab202fd56b3fcaf9389b7cade6",
+        "comment_count": 0,
+        "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+        }
+    },
+    "url": "https://api.github.com/repos/pytorch/pytorch/commits/f02753fabb8116ab202fd56b3fcaf9389b7cade6",
+    "html_url": "https://github.com/pytorch/pytorch/commit/f02753fabb8116ab202fd56b3fcaf9389b7cade6",
+    "comments_url": "https://api.github.com/repos/pytorch/pytorch/commits/f02753fabb8116ab202fd56b3fcaf9389b7cade6/comments",
+    "author": {
+        "login": "anoidgit",
+        "id": 84830880,
+        "node_id": "MDQ6VXNlcjg0ODMwODgw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/84830880?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/anoidgit",
+        "html_url": "https://github.com/anoidgit",
+        "followers_url": "https://api.github.com/users/anoidgit/followers",
+        "following_url": "https://api.github.com/users/anoidgit/following{/other_user}",
+        "gists_url": "https://api.github.com/users/anoidgit/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/anoidgit/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/anoidgit/subscriptions",
+        "organizations_url": "https://api.github.com/users/anoidgit/orgs",
+        "repos_url": "https://api.github.com/users/anoidgit/repos",
+        "events_url": "https://api.github.com/users/anoidgit/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/anoidgit/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "committer": {
+        "login": "facebook-github-bot",
+        "id": 6422482,
+        "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/6422482?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/facebook-github-bot",
+        "html_url": "https://github.com/facebook-github-bot",
+        "followers_url": "https://api.github.com/users/facebook-github-bot/followers",
+        "following_url": "https://api.github.com/users/facebook-github-bot/following{/other_user}",
+        "gists_url": "https://api.github.com/users/facebook-github-bot/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/facebook-github-bot/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/facebook-github-bot/subscriptions",
+        "organizations_url": "https://api.github.com/users/facebook-github-bot/orgs",
+        "repos_url": "https://api.github.com/users/facebook-github-bot/repos",
+        "events_url": "https://api.github.com/users/facebook-github-bot/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/facebook-github-bot/received_events",
+        "type": "User",
+        "site_admin": false
+    },
+    "parents": [
+        {
+            "sha": "cbdaa20c88306b9a828edd6e766d3c987b19a628",
+            "url": "https://api.github.com/repos/pytorch/pytorch/commits/cbdaa20c88306b9a828edd6e766d3c987b19a628",
+            "html_url": "https://github.com/pytorch/pytorch/commit/cbdaa20c88306b9a828edd6e766d3c987b19a628"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "git-visualizer",
+  "description": "A web based application to represent github repo's / git database in graph format",
+  "version": "0.0.0",
+  "author": {
+    "name": "sleepingsaint",
+    "url": "https://github.com/sleepingsaint/git-visualizer"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "d3": "^7.3.0",
+    "dagre": "^0.8.5",
+    "dagre-d3": "^0.6.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-flow-renderer": "^9.7.3"
+  },
+  "devDependencies": {
+    "@types/d3": "^7.1.0",
+    "@types/dagre": "^0.7.47",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@vitejs/plugin-react": "^1.0.7",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vite-tsconfig-paths": "^3.3.17"
+  }
+}
