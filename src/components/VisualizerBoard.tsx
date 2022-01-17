@@ -1,4 +1,4 @@
-import dagre from "dagre";
+// import dagre from "dagre";
 import React, { useEffect, useState } from "react";
 import ReactFlow, {
     Controls,
@@ -28,46 +28,46 @@ const VisualizerBoard: React.FC = () => {
     const { fitBounds } = useZoomPanHelper();
 
     // helper function to compute the layout of the elements
-    const getLayoutedElements = (els: Elements, nodes: Array<Node>) => {
-        const dagreGraph = new dagre.graphlib.Graph();
-        dagreGraph.setDefaultEdgeLabel(() => ({}));
+    // const getLayoutedElements = (els: Elements, nodes: Array<Node>) => {
+    //     const dagreGraph = new dagre.graphlib.Graph();
+    //     dagreGraph.setDefaultEdgeLabel(() => ({}));
 
-        let dimMap = new Map();
-        nodes.forEach((node) => dimMap.set(node.id, node.__rf));
-        dagreGraph.setGraph({ ranker: "tight-tree" });
+    //     let dimMap = new Map();
+    //     nodes.forEach((node) => dimMap.set(node.id, node.__rf));
+    //     dagreGraph.setGraph({ ranker: "tight-tree" });
 
-        els.forEach((el) => {
-            if (isNode(el)) {
-                dagreGraph.setNode(el.id, {
-                    width: dimMap.get(el.id).width,
-                    height: dimMap.get(el.id).height,
-                });
-            } else {
-                dagreGraph.setEdge(el.source, el.target);
-            }
-        });
+    //     els.forEach((el) => {
+    //         if (isNode(el)) {
+    //             dagreGraph.setNode(el.id, {
+    //                 width: dimMap.get(el.id).width,
+    //                 height: dimMap.get(el.id).height,
+    //             });
+    //         } else {
+    //             dagreGraph.setEdge(el.source, el.target);
+    //         }
+    //     });
 
-        dagre.layout(dagreGraph);
+    //     dagre.layout(dagreGraph);
 
-        const dims = {width: dagreGraph.graph().width, height: dagreGraph.graph().height};
+    //     const dims = {width: dagreGraph.graph().width, height: dagreGraph.graph().height};
 
-        const layoouted_els = els.map((el) => {
-            if (isNode(el)) {
-                const nodeWithPosition = dagreGraph.node(el.id);
-                el.targetPosition = Position.Top;
-                el.sourcePosition = Position.Bottom;
+    //     const layoouted_els = els.map((el) => {
+    //         if (isNode(el)) {
+    //             const nodeWithPosition = dagreGraph.node(el.id);
+    //             el.targetPosition = Position.Top;
+    //             el.sourcePosition = Position.Bottom;
 
-                el.position = {
-                    x: nodeWithPosition.x - dimMap.get(el.id).width / 2,
-                    y: nodeWithPosition.y - dimMap.get(el.id).height / 2,
-                };
-            }
+    //             el.position = {
+    //                 x: nodeWithPosition.x - dimMap.get(el.id).width / 2,
+    //                 y: nodeWithPosition.y - dimMap.get(el.id).height / 2,
+    //             };
+    //         }
 
-            return el;
-        });
+    //         return el;
+    //     });
 
-        return {dims, layoouted_els}
-    };
+    //     return {dims, layoouted_els}
+    // };
 
     // update the layout of the nodes
     useEffect(() => {
@@ -77,10 +77,10 @@ const VisualizerBoard: React.FC = () => {
             nodes.length > 0 &&
             nodes.every((node) => node.__rf.width && node.__rf.height)
         ) {
-            const {dims, layoouted_els} = getLayoutedElements(elements, nodes);
-            setElements(layoouted_els);
-            fitBounds({x: 0, y: 0, width: dims.width ?? 0, height: dims.height ?? 0 });
-            setUpdate(false);
+            // const {dims, layoouted_els} = getLayoutedElements(elements, nodes);
+            // setElements(layoouted_els);
+            // fitBounds({x: 0, y: 0, width: dims.width ?? 0, height: dims.height ?? 0 });
+            // setUpdate(false);
         }
     }, [update, nodes]);
 
